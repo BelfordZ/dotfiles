@@ -1,4 +1,3 @@
-!#/bin/sh
 if [ -e /Applications/iTerm.app ]
 then
   echo "Iterm already installed... skipping"
@@ -24,3 +23,5 @@ else
   ln -s ${HOME}/dotfiles/.zshrc ${HOME}/.zshrc
   source ~/.zshrc
 fi
+
+brew install autojump
