@@ -35,7 +35,7 @@ export NVM_DIR=~/.nvm
 . /usr/local/opt/nvm/nvm.sh
 
 
-for file in $HOME/dotfiles/.{emacs,git,docker}*; do
+for file in $HOME/dotfiles/.{emacs,git,docker}.sh; do
     echo "loading file $file... "
     source "$file"
 done
