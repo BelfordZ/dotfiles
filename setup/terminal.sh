@@ -20,7 +20,9 @@ else
   curl -L https://github.com/powerline/fonts/raw/master/Meslo/Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.otf --output /Library/Fonts/MesloPowerline.otf
 
   rm -f ~/.zshrc
+  rm -f ~/.zshenv
   ln -s ${HOME}/dotfiles/.zshrc ${HOME}/.zshrc
+  ln -s ${HOME}/dotfiles/.zshenv ${HOME}/.zshenv
   source ~/.zshrc
 fi
 
