@@ -2,3 +2,11 @@ things to add in:
 https://github.com/alextaylor000/taylormade-environment/blob/master/aws_rotate_keys_scheduler.rb
 
 - make a bucket for useful scripts. Currently been using aliases folder, but that doesn't really make complete sense.
+
+- add .ctags https://github.com/alextaylor000/taylormade-environment/blob/master/.ctags
+
+- remove nvm in favor of nodenv
+
+- add a .gemrc with gem: --no-ri --no-rdoc https://github.com/scottbrown/dotfiles/blob/master/ruby/.gemrc
+
+- take a look at using Stow to setup symlinks http://www.gnu.org/software/stow/ https://github.com/scottbrown/dotfiles/blob/master/bootstrap-stow.sh
