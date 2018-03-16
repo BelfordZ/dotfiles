@@ -1,6 +1,9 @@
-echo "Initialization started"
-for file in $HOME/dotfiles/{init,keys}/*.sh; do
-    echo "loading $file... "
+echo "Loading Path"
+source "$HOME/dotfiles/path.sh"
+echo "Loading Path Done!"
+
+echo "Loading Keys"
+for file in $HOME/dotfiles/keys/*.sh; do
     source "$file"
-    echo "done loading $file"
 done
+echo "Loading Keys Done!"
