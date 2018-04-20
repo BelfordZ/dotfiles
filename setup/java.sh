@@ -1,2 +1,2 @@
-brew cask install java
-brew install maven
+git clone https://github.com/gcuisinier/jenv.git ~/.jenv
+
