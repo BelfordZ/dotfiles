@@ -14,13 +14,13 @@ export DEFAULT_USER=$(id -un)
 source $ZSH/oh-my-zsh.sh
 
 echo "Setting Aliases"
-for file in $HOME/dotfiles/aliases/*.sh; do
+for file in $HOME/code/dotfiles/aliases/*.sh; do
     source "$file"
 done
 echo "Setting Aliases Done!"
 
 echo "Initializing Tools"
-for file in $HOME/dotfiles/init/*.sh; do
+for file in $HOME/code/dotfiles/init/*.sh; do
     source "$file"
 done
 echo "Initialization Done!"
