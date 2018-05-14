@@ -1,13 +1,26 @@
-!#/bin/sh
+osx_only=(osx brew iterm)
+linux_only=()
 
-cd ${HOME}
+if [[ $OSTYPE == "darwin" ]]; then 
+  for f in ${osx_only[@]}; do 
+    source $f.sh
+  done
+fi
 
-~/dotfiles/setup/osx.sh
-~/dotfiles/setup/brew.sh
-~/dotfiles/setup/terminal.sh
-~/dotfiles/setup/emacs.sh
-~/dotfiles/setup/ruby.sh
-~/dotfiles/setup/node.sh
-~/dotfiles/setup/java.sh
-~/dotfiles/setup/docker.sh
-/Applications/iTerm.app/Contents/MacOS/iTerm
+if [[ $OSTYPE == "linux-gnu" ]]; then 
+  for f in ${linux_only[@]}; do 
+    source $f.sh
+  done
+fi
+
+source $(pwd)/zsh.sh
+source $(pwd)/emacs.sh
+source $(pwd)/ruby.sh
+source $(pwd)/node.sh
+source $(pwd)/java.sh
+source $(pwd)/docker.sh
+
+ln -s ../.zshrc ~/
+ln -s ../.spacemacs ~/
+ln -s ../.tmux.conf ~/
+ln -s ../.zshenv ~/

@@ -1,3 +1,2 @@
-!#/bin/sh
-
-brew install nvm
+git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+~/.nodenv/bin/nodenv init

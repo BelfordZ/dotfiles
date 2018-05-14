@@ -14,13 +14,13 @@ export DEFAULT_USER=$(id -un)
 source $ZSH/oh-my-zsh.sh
 
 echo "Setting Aliases"
-for file in $HOME/dotfiles/aliases/*.sh; do
+for file in $HOME/code/dotfiles/aliases/*.sh; do
     source "$file"
 done
 echo "Setting Aliases Done!"
 
 echo "Initializing Tools"
-for file in $HOME/dotfiles/init/*.sh; do
+for file in $HOME/code/dotfiles/init/*.sh; do
     source "$file"
 done
 echo "Initialization Done!"
@@ -34,5 +34,8 @@ echo "Initialization Done!"
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+unsetopt BG_NICE
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
